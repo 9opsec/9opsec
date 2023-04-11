@@ -2,6 +2,8 @@ require 'httparty'
 require 'nokogiri'
 require 'octokit'
 
+# script from: https://www.bengreenberg.dev/posts/2023-04-09-github-profile-dynamic-content/
+
 # Scrape blog posts from the website
 url = "https://www.bengreenberg.dev/blog/"
 response = HTTParty.get(url)
