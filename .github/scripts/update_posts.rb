@@ -18,7 +18,7 @@ posts.first(5).each do |post|
   posts_list << "* [#{title}](#{link})"
 end
 
-puts "Hello World"
+# puts "Hello World"
 
 # Update the README.md file
 client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
@@ -28,9 +28,13 @@ puts ENV['GITHUB_REPOSITORY']
 puts "end repo"
 readme = client.readme(repo)
 readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
-puts "readme begin"
-puts readme_content
-puts "end readme"
+# puts "readme begin"
+# puts readme_content
+# puts "end readme"
+
+puts "posts_list begin----------------"
+puts posts_list
+puts "posts_list end------------------"
 
 # Replace the existing blog posts section
 posts_regex = /### Recent Blog Posts\n\n[\s\S]*?(?=<\/td>)/m
