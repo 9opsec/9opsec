@@ -48,5 +48,8 @@ updated_content = readme_content.sub(posts_regex, "#{posts_list.join("\n")}\n")
 # puts updated_content
 # puts "updated_content end------------------"
 # updated_content = "test"
+time2 = Time.now
+puts "Current Time : " + time2.inspect
+updated_content = "Recent blog posts " + time2.inspect
 
 client.update_contents(repo, 'README.md', 'Update recent blog posts', readme[:sha], updated_content)
