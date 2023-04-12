@@ -23,6 +23,9 @@ puts "Hello World"
 # Update the README.md file
 client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
 repo = ENV['GITHUB_REPOSITORY']
+puts "repo below"
+puts ENV['GITHUB_REPOSITORY']
+puts "end repo"
 readme = client.readme(repo)
 readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
 
