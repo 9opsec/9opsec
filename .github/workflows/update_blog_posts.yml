@@ -23,6 +23,6 @@ jobs:
 
      - name: Scrape posts and update README
        run: ruby ./.github/scripts/update_posts.rb
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
-#         GITHUB_REPOSITORY: ${{ secrets.TOKEN_SECRET }}
+       env:
+         GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
+         GITHUB_REPOSITORY: ${{ secrets.TOKEN_SECRET }}
