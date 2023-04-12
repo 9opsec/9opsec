@@ -1,5 +1,7 @@
 name: Update Recent Blog Posts
 
+# https://www.bengreenberg.dev/posts/2023-04-09-github-profile-dynamic-content/
+
 on:
   schedule:
     - cron: '0 0 * * 0' # Run once a week at 00:00 (midnight) on Sunday
