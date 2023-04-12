@@ -18,6 +18,8 @@ posts.first(5).each do |post|
   posts_list << "* [#{title}](#{link})"
 end
 
+puts "Hello World"
+
 # Update the README.md file
 client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
 repo = ENV['GITHUB_REPOSITORY']
