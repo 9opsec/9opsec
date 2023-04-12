@@ -31,5 +31,6 @@ jobs:
       run: ruby ./.github/scripts/update_posts.rb
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_REPOSITORY: $GITHUB_REPOSITORY        
+#         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
 #         GITHUB_REPOSITORY: ${{ secrets.REPO_NAME }}
