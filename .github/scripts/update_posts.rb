@@ -28,6 +28,9 @@ puts ENV['GITHUB_REPOSITORY']
 puts "end repo"
 readme = client.readme(repo)
 readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
+puts "readme begin"
+puts readme_content
+puts "end readme"
 
 # Replace the existing blog posts section
 posts_regex = /### Recent Blog Posts\n\n[\s\S]*?(?=<\/td>)/m
