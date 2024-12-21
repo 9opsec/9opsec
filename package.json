@@ -8,7 +8,9 @@
     "test": "npm run test-update-readme",
     "test-update-readme": "DRYRUN=1 node --experimental-strip-types script/update-readme-blog-posts.ts",
     "update-readme": "node --experimental-strip-types script/update-readme-blog-posts.ts",
-    "lint": "tsc"
+    "lint": "tsc",
+    "readme:dryrun": "DRYRUN=1 node script/update-blog-posts.js",
+    "readme:update": "node script/update-blog-posts.js",    
   },
   "keywords": [],
   "author": "",
