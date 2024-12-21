@@ -1,4 +1,9 @@
 
+// https://github.com/schalkneethling/schalkneethling/blob/main/.github/workflows/update-blog-posts.yml
+// add this to the package.json 
+    // "readme:dryrun": "DRYRUN=1 node script/update-blog-posts.js",
+    // "readme:update": "node script/update-blog-posts.js",
+      
 import { readFileSync, writeFileSync } from "node:fs";
 
 import { XMLParser } from "fast-xml-parser";
