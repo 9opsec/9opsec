@@ -30,8 +30,10 @@ jobs:
       # Step 4: Compile TypeScript
       - name: Compile TypeScript
         # run: tsc scripts/update-readme-blog-posts.ts
-        run: tsc update-readme-blog-posts.ts
+        run: tsc /update-readme-blog-posts.ts
 
       # Step 5: Run Compiled JavaScript
       - name: Run Script
-        run: node  scripts/update-readme-blog-posts.ts
+        # run: node  scripts/update-readme-blog-posts.ts
+        run: node  /update-readme-blog-posts.ts
+        
