@@ -30,9 +30,9 @@ jobs:
 
       - name: Scrape posts and update README
         run: node scripts/update-readme-blog-posts.ts
-          # env:
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # GITHUB_REPOSITORY: $GITHUB_REPOSITORY            
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: $GITHUB_REPOSITORY            
 
       - name: Lint code
         if: ${{ github.event_name == 'pull_request' }}
