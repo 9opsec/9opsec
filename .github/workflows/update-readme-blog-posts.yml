@@ -1,9 +1,9 @@
 name: Update README blog posts
 
 on:
-  pull_request:
-  schedule:
-    - cron: '0 * * * 0'
+  # pull_request:
+  # schedule:
+  #   - cron: '0 * * * 0'
   workflow_dispatch:
 
 permissions:
@@ -25,8 +25,8 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Update README
-        run: npm run update-readme
+      # - name: Update README
+      #   run: npm run update-readme
 
       - name: Scrape posts and update README
         run: node scripts/update-readme-blog-posts.ts
