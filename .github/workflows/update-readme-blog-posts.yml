@@ -1,9 +1,9 @@
-name: Update README blog posts
+name: Run Typescript to update README blog posts
 
 on:
   # pull_request:
-  # schedule:
-  #   - cron: '0 * * * 0'
+  schedule:
+     - cron: '0 * * * 0'
   workflow_dispatch:
 
 permissions:
@@ -38,7 +38,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: npm run lint
         
-      - name: Lint code
+      - name: Update README by running typescript file
         # if: ${{ github.event_name == 'pull_request' }}
         if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
         run: npm run update-readme
