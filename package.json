@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "npm run test-update-readme",
-    "test-update-readme": "DRYRUN=1 node --experimental-strip-types script/update-readme-blog-posts.ts",
-    "update-readme": "node --experimental-strip-types script/update-readme-blog-posts.ts",
+    "test-update-readme": "DRYRUN=1 node --experimental-strip-types scripts/update-readme-blog-posts.ts",
+    "update-readme": "node --experimental-strip-types scripts/update-readme-blog-posts.ts",
     "lint": "tsc"
   },
   "keywords": [],
