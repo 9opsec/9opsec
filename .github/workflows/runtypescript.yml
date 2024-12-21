@@ -22,10 +22,10 @@ jobs:
           node-version: '20'
 
       # Step 3: Install Dependencies
-      - name: Install Dependencies
-        run: |
-          npm install
-          npm install -g typescript
+      # - name: Install Dependencies
+      #   run: |
+      #     npm install
+      #     npm install -g typescript
 
       # Step 4: Compile TypeScript
       - name: Compile TypeScript
