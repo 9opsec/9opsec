@@ -40,14 +40,14 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: npm run lint
 
-      # below uses javascript
-      - name:  Update README by running javascript file
-        run: npm run readme:update  
+      # # below uses javascript
+      # - name:  Update README by running javascript file
+      #   run: npm run readme:update  
         
-      # - name: Update README by running typescript file
-      #   ## if: ${{ github.event_name == 'pull_request' }}
-      #   if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
-      #   run: npm run update-readme
+      - name: Update README by running typescript file
+        ## if: ${{ github.event_name == 'pull_request' }}
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+        run: npm run update-readme
 
       - name: Diff?
         run: git diff
