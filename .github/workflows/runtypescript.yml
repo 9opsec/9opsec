@@ -1,5 +1,7 @@
 name: Run TypeScript Script
 
+# this doesnt work
+
 on:
   workflow_dispatch:
   # push:
