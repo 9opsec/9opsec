@@ -1,0 +1,20 @@
+{
+  "name": "9opsec",
+  "version": "1.0.0",
+  "description": "description goes here.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test-update-readme",
+    "test-update-readme": "DRYRUN=1 node --experimental-strip-types script/update-readme-blog-posts.ts",
+    "update-readme": "node --experimental-strip-types script/update-readme-blog-posts.ts",
+    "lint": "tsc"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}

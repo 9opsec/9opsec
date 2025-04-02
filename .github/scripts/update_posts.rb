@@ -27,7 +27,10 @@ puts "repo below"
 puts ENV['GITHUB_REPOSITORY']
 puts "end repo"
 readme = client.readme(repo)
-readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
+
+# below errors
+#readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
+
 # puts "readme begin"
 # puts readme_content
 # puts "end readme"
@@ -37,12 +40,14 @@ readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
 # puts "posts_list end------------------"
 
 # Replace the existing blog posts section
-# posts_regex = /### Recent blog posts\n\n[\s\S]*?(?=<\/td>)/m
-posts_regex = /### Recent blog posts[\s\S]*?(?=<\/td>)/m
+posts_regex = /### Recent blog posts\n\n[\s\S]*?(?=<\/td>)/m
+#posts_regex = /### Recent blog posts[\s\S]*?(?=<\/td>)/m
 # puts "regex begin----------------"
 # puts posts_regex
 # puts "regex end------------------"
-updated_content = readme_content.sub(posts_regex, "#{posts_list.join("\n")}\n")
+
+# commenting out because of readme_content error above
+#updated_content = readme_content.sub(posts_regex, "#{posts_list.join("\n")}\n")
 
 # puts "updated_content begin----------------"
 # puts updated_content

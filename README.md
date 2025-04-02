@@ -1,1 +1,8 @@
-Recent blog posts 2023-10-29 00:46:55.03305605 +0000
+
+<a href="https://app.daily.dev/plato"><img src="./devcard.png" width="356" alt="Plato's Dev Card"/></a>
+
+<!-- blog posts -->
+
+<!-- /blog posts -->
+
+Recent blog posts 2024-12-20 23:55:47.251447208 +0000
