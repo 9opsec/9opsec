@@ -1,5 +1,5 @@
 
-<a href="https://app.daily.dev/plato"><img src="./devcard.png" width="356" alt="Plato's Dev Card"/></a>
+<a href="https://app.daily.dev/plato"><img src="./devcard.png" width="356" alt="Plato's Dev Card "/></a>
 
 <!-- blog posts -->
 
